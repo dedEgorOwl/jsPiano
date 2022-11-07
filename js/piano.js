@@ -49,74 +49,78 @@ const ASsound = new Audio('https://res.cloudinary.com/dspfsamgq/video/upload/v15
 
 //whiteBtnsHandle
 document.addEventListener("keydown", function(event) {
+  if (event?.repeat) {
+    return;
+  }
+
   switch(event.key.toLowerCase()){
     case('q'):
       C1.classList.add('pianoBtnMainActive');
-      new Audio(Csound.src).play;
+      new Audio(Csound.src).play();
       break;
     case('w'):
       D1.classList.add('pianoBtnMainActive');
-      new Audio(Dsound.src).play;
+      new Audio(Dsound.src).play();
       break;
-    case('e'):
+    case('e1'):
       E1.classList.add('pianoBtnMainActive');
-      new Audio(Esound.src).play;
+      new Audio(Esound.src).play();
       break;
     case('r'):
       F1.classList.add('pianoBtnMainActive');
-      new Audio(Fsound.src).play;
+      new Audio(Fsound.src).play();
       break;
     case('t'):
       G1.classList.add('pianoBtnMainActive');
-      new Audio(Gsound.src).play;
+      new Audio(Gsound.src).play();
       break;
     case('y'):
       A1.classList.add('pianoBtnMainActive');
-      new Audio(Asound.src).play;
+      new Audio(Asound.src).play();
       break;
     case('u'):
       B1.classList.add('pianoBtnMainActive');
-      new Audio(Bsound.src).play;
+      new Audio(Bsound.src).play();
       break;
     case('i'):
       C2.classList.add('pianoBtnMainActive');
-      new Audio(Csound.src).play;
+      new Audio(Csound.src).play();
       break;
     case('o'):
       D2.classList.add('pianoBtnMainActive');
-      new Audio(Dsound.src).play;
+      new Audio(Dsound.src).play();
       break;
     case('p'):
       E2.classList.add('pianoBtnMainActive');
-      new Audio(Esound.src).play;
+      new Audio(Esound.src).play();
       break;
     case('['):
       F2.classList.add('pianoBtnMainActive');
-      new Audio(Fsound.src).play;
+      new Audio(Fsound.src).play();
       break;
     case(']'):
       G2.classList.add('pianoBtnMainActive');
-      new Audio(Gsound.src).play;
+      new Audio(Gsound.src).play();
       break;
     case('n'):
       A2.classList.add('pianoBtnMainActive');
-      new Audio(Asound.src).play;
+      new Audio(Asound.src).play();
       break;
     case('m'):
       B2.classList.add('pianoBtnMainActive');
-      new Audio(Bsound.src).play;
+      new Audio(Bsound.src).play();
       break;
     case(','):
       C3.classList.add('pianoBtnMainActive');
-      new Audio(Csound.src).play;
+      new Audio(Csound.src).play();
       break;
     case('.'):
       D3.classList.add('pianoBtnMainActive');
-      new Audio(Dsound.src).play;
+      new Audio(Dsound.src).play();
       break;
     case('/'):
       E3.classList.add('pianoBtnMainActive');
-      new Audio(Esound.src).play;
+      new Audio(Esound.src).play();
       break;
   }
 });
@@ -181,51 +185,51 @@ document.addEventListener("keydown", function(event) {
   switch(event.key.toLowerCase()){
     case('1'):
       C1sharp.classList.add('pianoBtnSharpActive');
-      new Audio(CSsound.src).play;
+      new Audio(CSsound.src).play();
       break;
     case('2'):
       D1sharp.classList.add('pianoBtnSharpActive');
-      new Audio(DSsound.src).play;
+      new Audio(DSsound.src).play();
       break;
     case('3'):
       F1sharp.classList.add('pianoBtnSharpActive');
-      new Audio(FSsound.src).play;
+      new Audio(FSsound.src).play();
       break;
     case('4'):
       G1sharp.classList.add('pianoBtnSharpActive');
-      new Audio(GSsound.src).play;
+      new Audio(GSsound.src).play();
       break;
     case('5'):
       A1sharp.classList.add('pianoBtnSharpActive');
-      new Audio(ASsound.src).play;
+      new Audio(ASsound.src).play();
       break;
     case('6'):
       C2sharp.classList.add('pianoBtnSharpActive');
-      new Audio(CSsound.src).play;
+      new Audio(CSsound.src).play();
       break;
     case('7'):
       D2sharp.classList.add('pianoBtnSharpActive');
-      new Audio(DSsound.src).play;
+      new Audio(DSsound.src).play();
       break;
     case('8'):
       F2sharp.classList.add('pianoBtnSharpActive');
-      new Audio(FSsound.src).play;
+      new Audio(FSsound.src).play();
       break;
     case('9'):
       G2sharp.classList.add('pianoBtnSharpActive');
-      new Audio(GSsound.src).play;
+      new Audio(GSsound.src).play();
       break;
     case('0'):
       A2sharp.classList.add('pianoBtnSharpActive');
-      new Audio(ASsound.src).play;
+      new Audio(ASsound.src).play();
       break;
     case('-'):
       C3sharp.classList.add('pianoBtnSharpActive');
-      new Audio(CSsound.src).play;
+      new Audio(CSsound.src).play();
       break;
     case('='):
       D3sharp.classList.add('pianoBtnSharpActive');
-      new Audio(DSsound.src).play;
+      new Audio(DSsound.src).play();
       break;
   }
 });
