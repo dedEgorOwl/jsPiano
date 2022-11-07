@@ -62,7 +62,7 @@ document.addEventListener("keydown", function(event) {
       D1.classList.add('pianoBtnMainActive');
       new Audio(Dsound.src).play();
       break;
-    case('e1'):
+    case('e'):
       E1.classList.add('pianoBtnMainActive');
       new Audio(Esound.src).play();
       break;
