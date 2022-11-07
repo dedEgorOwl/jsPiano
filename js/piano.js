@@ -49,379 +49,223 @@ const ASsound = new Audio('https://res.cloudinary.com/dspfsamgq/video/upload/v15
 
 //whiteBtnsHandle
 document.addEventListener("keydown", function(event) {
-  if (event.key == 'q' || event.key == 'Q') {
-    C1.classList.add('pianoBtnMainActive');
-		Csound.load();
-		Csound.play();
+  switch(event.key.toLowerCase()){
+    case('q'):
+      C1.classList.add('pianoBtnMainActive');
+      new Audio(Csound.src).play;
+      break;
+    case('w'):
+      D1.classList.add('pianoBtnMainActive');
+      new Audio(Dsound.src).play;
+      break;
+    case('e'):
+      E1.classList.add('pianoBtnMainActive');
+      new Audio(Esound.src).play;
+      break;
+    case('r'):
+      F1.classList.add('pianoBtnMainActive');
+      new Audio(Fsound.src).play;
+      break;
+    case('t'):
+      G1.classList.add('pianoBtnMainActive');
+      new Audio(Gsound.src).play;
+      break;
+    case('y'):
+      A1.classList.add('pianoBtnMainActive');
+      new Audio(Asound.src).play;
+      break;
+    case('u'):
+      B1.classList.add('pianoBtnMainActive');
+      new Audio(Bsound.src).play;
+      break;
+    case('i'):
+      C2.classList.add('pianoBtnMainActive');
+      new Audio(Csound.src).play;
+      break;
+    case('o'):
+      D2.classList.add('pianoBtnMainActive');
+      new Audio(Dsound.src).play;
+      break;
+    case('p'):
+      E2.classList.add('pianoBtnMainActive');
+      new Audio(Esound.src).play;
+      break;
+    case('['):
+      F2.classList.add('pianoBtnMainActive');
+      new Audio(Fsound.src).play;
+      break;
+    case(']'):
+      G2.classList.add('pianoBtnMainActive');
+      new Audio(Gsound.src).play;
+      break;
+    case('n'):
+      A2.classList.add('pianoBtnMainActive');
+      new Audio(Asound.src).play;
+      break;
+    case('m'):
+      B2.classList.add('pianoBtnMainActive');
+      new Audio(Bsound.src).play;
+      break;
+    case(','):
+      C3.classList.add('pianoBtnMainActive');
+      new Audio(Csound.src).play;
+      break;
+    case('.'):
+      D3.classList.add('pianoBtnMainActive');
+      new Audio(Dsound.src).play;
+      break;
+    case('/'):
+      E3.classList.add('pianoBtnMainActive');
+      new Audio(Esound.src).play;
+      break;
   }
 });
 document.addEventListener("keyup", function(event) {
-  if (event.key == 'q' || event.key == 'Q') {
-    C1.classList.remove('pianoBtnMainActive');
+  switch(event.key.toLowerCase()) {
+    case('q'):
+      C1.classList.remove('pianoBtnMainActive');
+      break;
+    case('w'):
+      D1.classList.remove('pianoBtnMainActive');
+      break;
+    case('e'):
+      E1.classList.remove('pianoBtnMainActive');
+      break;
+    case('r'):
+      F1.classList.remove('pianoBtnMainActive');
+      break;
+    case('t'):
+      G1.classList.remove('pianoBtnMainActive');
+      break;
+    case('y'):
+      A1.classList.remove('pianoBtnMainActive');
+      break;
+    case('u'):
+      B1.classList.remove('pianoBtnMainActive');
+      break;
+    case('i'):
+      C2.classList.remove('pianoBtnMainActive');
+      break;
+    case('o'):
+      D2.classList.remove('pianoBtnMainActive');
+      break;
+    case('p'):
+      E2.classList.remove('pianoBtnMainActive');
+      break;
+    case('['):
+      F2.classList.remove('pianoBtnMainActive');
+      break;
+    case(']'):
+      G2.classList.remove('pianoBtnMainActive');
+      break;
+    case('n'):
+      A2.classList.remove('pianoBtnMainActive');
+      break;
+    case('m'):
+      B2.classList.remove('pianoBtnMainActive');
+      break;
+    case(','):
+      C3.classList.remove('pianoBtnMainActive');
+      break;
+    case('.'):
+      D3.classList.remove('pianoBtnMainActive');
+      break;
+    case('/'):
+      E3.classList.remove('pianoBtnMainActive');
+      break;
   }
 });
 
+//blackbtns handle
 document.addEventListener("keydown", function(event) {
-  if (event.key == 'w' || event.key == 'W') {
-    D1.classList.add('pianoBtnMainActive');
-		Dsound.load();
-		Dsound.play();
+  switch(event.key.toLowerCase()){
+    case('1'):
+      C1sharp.classList.add('pianoBtnSharpActive');
+      new Audio(CSsound.src).play;
+      break;
+    case('2'):
+      D1sharp.classList.add('pianoBtnSharpActive');
+      new Audio(DSsound.src).play;
+      break;
+    case('3'):
+      F1sharp.classList.add('pianoBtnSharpActive');
+      new Audio(FSsound.src).play;
+      break;
+    case('4'):
+      G1sharp.classList.add('pianoBtnSharpActive');
+      new Audio(GSsound.src).play;
+      break;
+    case('5'):
+      A1sharp.classList.add('pianoBtnSharpActive');
+      new Audio(ASsound.src).play;
+      break;
+    case('6'):
+      C2sharp.classList.add('pianoBtnSharpActive');
+      new Audio(CSsound.src).play;
+      break;
+    case('7'):
+      D2sharp.classList.add('pianoBtnSharpActive');
+      new Audio(DSsound.src).play;
+      break;
+    case('8'):
+      F2sharp.classList.add('pianoBtnSharpActive');
+      new Audio(FSsound.src).play;
+      break;
+    case('9'):
+      G2sharp.classList.add('pianoBtnSharpActive');
+      new Audio(GSsound.src).play;
+      break;
+    case('0'):
+      A2sharp.classList.add('pianoBtnSharpActive');
+      new Audio(ASsound.src).play;
+      break;
+    case('-'):
+      C3sharp.classList.add('pianoBtnSharpActive');
+      new Audio(CSsound.src).play;
+      break;
+    case('='):
+      D3sharp.classList.add('pianoBtnSharpActive');
+      new Audio(DSsound.src).play;
+      break;
   }
 });
 document.addEventListener("keyup", function(event) {
-  if (event.key == 'w' || event.key == 'W') {
-    D1.classList.remove('pianoBtnMainActive');
-  }
-});
-
-document.addEventListener("keydown", function(event) {
-  if (event.key == 'e' || event.key == 'E') {
-    E1.classList.add('pianoBtnMainActive');
-		Esound.load();
-		Esound.play();
-  }
-});
-document.addEventListener("keyup", function(event) {
-  if (event.key == 'e' || event.key == 'E') {
-    E1.classList.remove('pianoBtnMainActive');
-  }
-});
-
-document.addEventListener("keydown", function(event) {
-  if (event.key == 'r' || event.key == 'R') {
-    F1.classList.add('pianoBtnMainActive');
-		Fsound.load();
-		Fsound.play();
-  }
-});
-document.addEventListener("keyup", function(event) {
-  if (event.key == 'r' || event.key == 'R') {
-    F1.classList.remove('pianoBtnMainActive');
-  }
-});
-
-document.addEventListener("keydown", function(event) {
-  if (event.key == 't' || event.key == 'T') {
-    G1.classList.add('pianoBtnMainActive');
-		Gsound.load();
-		Gsound.play();
-  }
-});
-document.addEventListener("keyup", function(event) {
-  if (event.key == 't' || event.key == 'T') {
-    G1.classList.remove('pianoBtnMainActive');
-  }
-});
-
-document.addEventListener("keydown", function(event) {
-  if (event.key == 'y' || event.key == 'Y') {
-    A1.classList.add('pianoBtnMainActive');
-		Asound.load();
-		Asound.play();
-  }
-});
-document.addEventListener("keyup", function(event) {
-  if (event.key == 'y' || event.key == 'Y') {
-    A1.classList.remove('pianoBtnMainActive');
-  }
-});
-
-document.addEventListener("keydown", function(event) {
-  if (event.key == 'u' || event.key == 'U') {
-    B1.classList.add('pianoBtnMainActive');
-		Bsound.load();
-		Bsound.play();
-  }
-});
-document.addEventListener("keyup", function(event) {
-  if (event.key == 'u' || event.key == 'U') {
-    B1.classList.remove('pianoBtnMainActive');
-  }
-});
-
-document.addEventListener("keydown", function(event) {
-  if (event.key == 'i' || event.key == 'I') {
-    C2.classList.add('pianoBtnMainActive');
-		Csound.load();
-		Csound.play();
-  }
-});
-document.addEventListener("keyup", function(event) {
-  if (event.key == 'i' || event.key == 'I') {
-    C2.classList.remove('pianoBtnMainActive');
-  }
-});
-
-document.addEventListener("keydown", function(event) {
-  if (event.key == 'o' || event.key == 'O') {
-    D2.classList.add('pianoBtnMainActive');
-		Dsound.load();
-		Dsound.play();
-  }
-});
-document.addEventListener("keyup", function(event) {
-  if (event.key == 'o' || event.key == 'O') {
-    D2.classList.remove('pianoBtnMainActive');
-  }
-});
-
-document.addEventListener("keydown", function(event) {
-  if (event.key == 'p' || event.key == 'P') {
-    E2.classList.add('pianoBtnMainActive');
-		Esound.load();
-		Esound.play();
-  }
-});
-document.addEventListener("keyup", function(event) {
-  if (event.key == 'p' || event.key == 'P') {
-    E2.classList.remove('pianoBtnMainActive');
-  }
-});
-
-document.addEventListener("keydown", function(event) {
-  if (event.key == '[') {
-    F2.classList.add('pianoBtnMainActive');
-		Fsound.load();
-		Fsound.play();
-  }
-});
-document.addEventListener("keyup", function(event) {
-  if (event.key == '[') {
-    F2.classList.remove('pianoBtnMainActive');
-  }
-});
-
-document.addEventListener("keydown", function(event) {
-  if (event.key == ']') {
-    G2.classList.add('pianoBtnMainActive');
-		Gsound.load();
-		Gsound.play();
-  }
-});
-document.addEventListener("keyup", function(event) {
-  if (event.key == ']') {
-    G2.classList.remove('pianoBtnMainActive');
-  }
-});
-
-document.addEventListener("keydown", function(event) {
-  if (event.code == 'Backslash') {
-    A2.classList.add('pianoBtnMainActive');
-		Asound.load();
-		Asound.play();
-  }
-});
-document.addEventListener("keyup", function(event) {
-  if (event.code == "Backslash") {
-    A2.classList.remove('pianoBtnMainActive');
-  }
-});
-
-document.addEventListener("keydown", function(event) {
-  if (event.key == 'm' || event.key == 'M') {
-    B2.classList.add('pianoBtnMainActive');
-		Bsound.load();
-		Bsound.play();
-  }
-});
-document.addEventListener("keyup", function(event) {
-  if (event.key == 'm' || event.key == 'M') {
-    B2.classList.remove('pianoBtnMainActive');
-  }
-});
-
-document.addEventListener("keydown", function(event) {
-  if (event.key == ',') {
-    C3.classList.add('pianoBtnMainActive');
-		Csound.load();
-		Csound.play();
-  }
-});
-document.addEventListener("keyup", function(event) {
-  if (event.key == ',') {
-    C3.classList.remove('pianoBtnMainActive');
-  }
-});
-
-document.addEventListener("keydown", function(event) {
-  if (event.key == '.') {
-    D3.classList.add('pianoBtnMainActive');
-		Dsound.load();
-		Dsound.play();
-  }
-});
-document.addEventListener("keyup", function(event) {
-  if (event.key == '.') {
-    D3.classList.remove('pianoBtnMainActive');
-  }
-});
-
-document.addEventListener("keydown", function(event) {
-  if (event.key == '/') {
-    E3.classList.add('pianoBtnMainActive');
-		Esound.load();
-		Esound.play();
-  }
-});
-document.addEventListener("keyup", function(event) {
-  if (event.key == '/') {
-    E3.classList.remove('pianoBtnMainActive');
-  }
-});
-
-//blackBtnsHandle
-document.addEventListener("keydown", function(event) {
-  if (event.key == '1') {
-    C1sharp.classList.add('pianoBtnSharpActive');
-		CSsound.load();
-		CSsound.play();
-  }
-});
-document.addEventListener("keyup", function(event) {
-  if (event.key == '1') {
-    C1sharp.classList.remove('pianoBtnSharpActive');
-  }
-});
-
-document.addEventListener("keydown", function(event) {
-  if (event.key == '2') {
-    D1sharp.classList.add('pianoBtnSharpActive');
-		DSsound.load();
-		DSsound.play();
-  }
-});
-document.addEventListener("keyup", function(event) {
-  if (event.key == '2') {
-    D1sharp.classList.remove('pianoBtnSharpActive');
-  }
-});
-
-document.addEventListener("keydown", function(event) {
-  if (event.key == '3') {
-    F1sharp.classList.add('pianoBtnSharpActive');
-		FSsound.load();
-		FSsound.play();
-  }
-});
-document.addEventListener("keyup", function(event) {
-  if (event.key == '3') {
-    F1sharp.classList.remove('pianoBtnSharpActive');
-  }
-});
-
-document.addEventListener("keydown", function(event) {
-  if (event.key == '4') {
-    G1sharp.classList.add('pianoBtnSharpActive');
-		GSsound.load();
-		GSsound.play();
-  }
-});
-document.addEventListener("keyup", function(event) {
-  if (event.key == '4') {
-    G1sharp.classList.remove('pianoBtnSharpActive');
-  }
-});
-
-document.addEventListener("keydown", function(event) {
-  if (event.key == '5') {
-    A1sharp.classList.add('pianoBtnSharpActive');
-		ASsound.load();
-		ASsound.play();
-  }
-});
-document.addEventListener("keyup", function(event) {
-  if (event.key == '5') {
-    A1sharp.classList.remove('pianoBtnSharpActive');
-  }
-});
-
-document.addEventListener("keydown", function(event) {
-  if (event.key == '6') {
-    C2sharp.classList.add('pianoBtnSharpActive');
-		CSsound.load();
-		CSsound.play();
-  }
-});
-document.addEventListener("keyup", function(event) {
-  if (event.key == '6') {
-    C2sharp.classList.remove('pianoBtnSharpActive');
-  }
-});
-
-document.addEventListener("keydown", function(event) {
-  if (event.key == '7') {
-    D2sharp.classList.add('pianoBtnSharpActive');
-		DSsound.load();
-		DSsound.play();
-  }
-});
-document.addEventListener("keyup", function(event) {
-  if (event.key == '7') {
-    D2sharp.classList.remove('pianoBtnSharpActive');
-  }
-});
-
-document.addEventListener("keydown", function(event) {
-  if (event.key == '8') {
-    F2sharp.classList.add('pianoBtnSharpActive');
-		FSsound.load();
-		FSsound.play();
-  }
-});
-document.addEventListener("keyup", function(event) {
-  if (event.key == '8') {
-    F2sharp.classList.remove('pianoBtnSharpActive');
-  }
-});
-
-document.addEventListener("keydown", function(event) {
-  if (event.key == '9') {
-    G2sharp.classList.add('pianoBtnSharpActive');
-		GSsound.load();
-		GSsound.play();
-  }
-});
-document.addEventListener("keyup", function(event) {
-  if (event.key == '9') {
-    G2sharp.classList.remove('pianoBtnSharpActive');
-  }
-});
-
-document.addEventListener("keydown", function(event) {
-  if (event.key == '0') {
-    A2sharp.classList.add('pianoBtnSharpActive');
-		ASsound.load();
-		ASsound.play();
-  }
-});
-document.addEventListener("keyup", function(event) {
-  if (event.key == '0') {
-    A2sharp.classList.remove('pianoBtnSharpActive');
-  }
-});
-
-document.addEventListener("keydown", function(event) {
-  if (event.key == '-') {
-    C3sharp.classList.add('pianoBtnSharpActive');
-		CSsound.load();
-		CSsound.play();
-  }
-});
-document.addEventListener("keyup", function(event) {
-  if (event.key == '-') {
-    C3sharp.classList.remove('pianoBtnSharpActive');
-  }
-});
-
-document.addEventListener("keydown", function(event) {
-  if (event.key == '=') {
-    D3sharp.classList.add('pianoBtnSharpActive');
-		DSsound.load();
-		DSsound.play();
-  }
-});
-document.addEventListener("keyup", function(event) {
-  if (event.key == '=') {
-    D3sharp.classList.remove('pianoBtnSharpActive');
+  switch(event.key.toLowerCase()){
+    case('1'):
+      C1sharp.classList.remove('pianoBtnSharpActive');
+      break;
+    case('2'):
+      D1sharp.classList.remove('pianoBtnSharpActive');
+      break;
+    case('3'):
+      F1sharp.classList.remove('pianoBtnSharpActive');
+      break;
+    case('4'):
+      G1sharp.classList.remove('pianoBtnSharpActive');
+      break;
+    case('5'):
+      A1sharp.classList.remove('pianoBtnSharpActive');
+      break;
+    case('6'):
+      C2sharp.classList.remove('pianoBtnSharpActive');
+      break;
+    case('7'):
+      D2sharp.classList.remove('pianoBtnSharpActive');
+      break;
+    case('8'):
+      F2sharp.classList.remove('pianoBtnSharpActive');
+      break;
+    case('9'):
+      G2sharp.classList.remove('pianoBtnSharpActive');
+      break;
+    case('0'):
+      A2sharp.classList.remove('pianoBtnSharpActive');
+      break;
+    case('-'):
+      C3sharp.classList.remove('pianoBtnSharpActive');
+      break;
+    case('='):
+      D3sharp.classList.remove('pianoBtnSharpActive');
+      break;
   }
 });
